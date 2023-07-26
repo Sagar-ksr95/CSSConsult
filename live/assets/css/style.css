@@ -6,7 +6,14 @@ html {
   overflow-x: hidden;
   -ms-overflow-style: scrollbar;
 }
+.navbar-custom{
+  background-color: #202020;
+}
 
+.navbar-custom .navbar-brand
+{
+  margin-top: -25px;
+}
 .logo
 {
   height: inherit;
