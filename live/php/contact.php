@@ -16,27 +16,7 @@
 	$body = "From: $name\n E-Mail: $email\n Message:\n $message";
 
 	$headers = "From: ".$from;
-
-
-	//send the email
-	$result = '';
-	/*// if (mail ($to, $subject, $body, $headers)) {
-	// 	$result .= '<div class="alert alert-success alert-dismissible" role="alert">';
- 	// 	$result .= '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
-	// 	$result .= 'Thank You! I will be in touch';
-	// 	$result .= '</div>';
-
-	// 	echo $result;
-	// 	die();
-	// }
-
-	// $result = '';
-	// $result .= '<div class="alert alert-danger alert-dismissible" role="alert">';
-	// $result .= '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
-	// $result .= 'Something bad happend during sending this message. Please try again later';
-	// $result .= '</div>';
-
-	// echo $result;*/
+	$response = 'Started';
 	if(sendMailjetEmail($apiKeyPublic, $apiKeyPrivate, $recipientEmail,$name,$email,$message)) {
 		/*
 		This call sends a message to the given recipient with vars and custom vars.
@@ -67,6 +47,6 @@
 				]
 			]
 		];
-		$response = $mj->post(Resources::$Email, ['body' => $body]);
-		return $response->success() ? $response->getData() : false;
+		$response = $mj->post(Resources::$Email, ['body' => $body]);	
 	}
+	echo $response;
