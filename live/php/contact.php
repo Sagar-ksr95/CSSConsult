@@ -23,23 +23,23 @@
 
 	$errorOutput = '';
 
-	if(!empty($errors)){
+	// if(!empty($errors)){
 
-		$errorOutput .= '<div class="alert alert-danger alert-dismissible" role="alert">';
- 		$errorOutput .= '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
+	// 	$errorOutput .= '<div class="alert alert-danger alert-dismissible" role="alert">';
+ 	// 	$errorOutput .= '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>';
 
-		$errorOutput  .= '<ul>';
+	// 	$errorOutput  .= '<ul>';
 
-		foreach ($errors as $key => $value) {
-			$errorOutput .= '<li>'.$value.'</li>';
-		}
+	// 	foreach ($errors as $key => $value) {
+	// 		$errorOutput .= '<li>'.$value.'</li>';
+	// 	}
 
-		$errorOutput .= '</ul>';
-		$errorOutput .= '</div>';
+	// 	$errorOutput .= '</ul>';
+	// 	$errorOutput .= '</div>';
 
-		echo $errorOutput;
-		die();
-	}
+	// 	echo $errorOutput;
+	// 	die();
+	// }
 
 
 
